@@ -53,5 +53,5 @@ int main(void)
 ## English
 
 My level of English is somewhere between C1 Advanced and C2 Proficient according to the Common European Framework of Reference.
-(https://ci3.googleusercontent.com/proxy/P7WZ3mF2K4gN26sSuvZ8WQ33IZiV9XSfKC0KGQ_1NjBCyUq8ON9DEVy--yz0i1OhieUMqWpjTvKUb5DP26lee6kwFXdMgBgHhAS2xl8l9D9LlTK8lagVp8v3hw=s0-d-e1-ft#https://cdn.efset.org/efset-media-assets/percentage-scores/badges/91.png)
+!(/assets/images/unnamed.png)
 
