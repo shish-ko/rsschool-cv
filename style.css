@@ -1,16 +1,55 @@
-html, body {
-    font-family: Arial, serif;
-    font-size: 16px;
-    margin: 0;
+body {
+    min-height: 100vh;
+    margin: o;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
-table {
-    border-collapse: collapse;
+
+main {
+    background-color: antiquewhite;
+    border: 1px solid red;
 }
-table.border td, table.border th {
-    padding: 5px;
-    border: 1px solid #c0c0c0;
+header {
+    background-color: rgb(112, 211, 178);
+    height: 80px;
+    border: 1px solid red;
 }
-table.border th {
-    background: #e0e0e0;
+footer {
+    border: 1px solid red;
 }
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+* {
+    box-sizing: border-box;
+  }
+  h1 {
+      font: 100px bold Arial, sans-serif;
+  }
+  .nav {
+    font: 25px bold Tahoma, sans-serif;
+  }
+
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .section {
+    width: 50%;
+  } 
+  .non-dot {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .nav-link {
+      padding: 0 20px;
+  }
