@@ -5,21 +5,30 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #FDFFE1;
+    background-color: #f6f4f5;
+    color: #4d2323;
+    line-height: 1,4;
+    scroll-behavior: smooth;
+    
     
 }
 
 main {
-    border: 1px solid red;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
     
 }
 header {
-    background-color: #3C7649;
+    background-color: #64829B;
     height: 60px;
+
     
 }
 footer {
-    border: 1px solid red;
+   
+    background-color: #C5bAA9;
+    height: 60 px;
+    
 }
 
 .container {
@@ -32,8 +41,32 @@ footer {
   }
 
 a {
-    color: #DEFFF0;
+    text-decoration: none;
+    position: relative;
     }
+
+    a:after {
+        display: block;
+        position: absolute;
+        left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+        width: 0;/*задаём длинну линии до наведения курсора*/
+        height: 2px; /*задаём ширину линии*/
+        background-color: #f6f4f5; /*задаём цвет линии*/
+        content: "";
+        transition: width 0.3s ease-out; /*задаём время анимации*/
+    }
+    
+    a:hover:after,
+    a:focus:after {
+        width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+    }
+.link-color-head {
+    color: #F6F4F5;
+}
+.link-color-main {
+    color: #64829B;
+
+}
   .nav {
     font: 20px bold Tahoma, sans-serif;
     color: #FDFFE1;
@@ -46,7 +79,20 @@ a {
   
   .section {
     width: 50%;
+       
   } 
+  .id-main {
+      width: 100%;
+      border-bottom: 10px solid #A0C4DC;
+      padding: 5px 0;
+      display: flex;
+  }
+  .id-main-text {
+    font: 35px bold;
+    text-align: center;
+    margin: auto;
+  }
+
   .non-dot {
     list-style: none;
     display: flex;
@@ -55,20 +101,36 @@ a {
   }
   .nav-link {
       padding: 0 15px;
+      
   }
   .main-photo {
     display: block;
     margin: auto;
     border-radius: 10%;
+    
       
   }
 
-    #name {
-    text-align: center;
-    margin: auto;
-  }
     .section-head {
+    font-family: 'Times New Roman', serif;
     font-variant: small-caps;
-    font-size: 20px;
-    color: #3C7649
+    font-size: 25px;
+    font-weight: bold;
+    color: #3C7649;
+    letter-spacing: 3px;
  }
+ .name-id {
+     font: 27px  bold Times New Roman, sans-serif;
+ }
+ .img-text {
+     width: 25px;
+ }
+.footer-photo {
+    width: 140px;
+    margin: auto;
+}
+
+.footer-text {
+    margin: auto;
+    font:  14px;
+}

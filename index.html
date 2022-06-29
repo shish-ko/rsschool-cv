@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" href="assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
  
   <title>CV</title>
   <meta name="description" content="The HTML5 Herald">
@@ -21,13 +24,12 @@
     <div class="container">
       <nav class="nav">
         <ul class="non-dot">
-          <li class="nav-link"><a href="#contacts">Contacts</a></li>
-          <li class="nav-link"><a href="#summury">About me</a></li>
-          <li class="nav-link"><a href="#skills">Skills</a></li>
-          <li class="nav-link"><a href="#education">Education</a></li>
-          <li class="nav-link"><a href="#code">Code</a></li>
-          <li class="nav-link"><a href="#projects">Projects</a></li>
-          <li class="nav-link"><a href="#languages">Languages</a></li>
+          <li class="nav-link"><a class="link-color-head" href="#contacts">Contacts</a></li>
+          <li class="nav-link"><a class="link-color-head" href="#summury">About me</a></li>
+          <li class="nav-link"><a class="link-color-head" href="#skills">Skills</a></li>
+          <li class="nav-link"><a class="link-color-head" href="#education">Education</a></li>
+          <li class="nav-link"><a class="link-color-head" href="#code">Code</a></li>
+          <li class="nav-link"><a class="link-color-head" href="#languages">Languages</a></li>
 
 
         </ul>
@@ -42,44 +44,84 @@
   </header>
   <main>
     <div class="container main-container">
-      <section class="section" id="photo">
-        <img class="main-photo" src="./assets/photo.jpg" alt="Andrew's photo">              
+      <section class="section id-main" id="photo">
+        <img class="main-photo" src="./assets/photo.jpg" alt="Andrew's photo">
+        <div class="id-main-text">
+          <p>Andrey Shishko</p> 
+          <p>Junior front-end developer</p>
+        </div>
+                              
       </section>
-      <section class="section" id="name">  
-        <p class="name-id">Andrey Shishko</p> 
-        <p class="name-id">Junior front-end developer</p>
-      </section>
+      
       <section class="section" id="contacts"> 
          <p class="section-head">contacts</p>
-         
-        
+         <p> <img class="img-text" src="./assets/Location.png" alt="geotag logo"> Minsk, Belarus</p>
+          <p><img class="img-text" src="./assets/mail.png" alt="e-mail logo"><a class="link-color-main" href="mailto:andrey.shishko@gmail.com"> Andrey.shishko@gmail.com</a></p>
+          <p><img class="img-text" src="./assets/phone1.png" alt="phone logo"> Phone: +375293655319</p>
+          <p><img class="img-text" src="./assets/GitHub.png" alt="GitHub logo">GitHub: <a class="link-color-main" href="https://github.com/shish-ko">GitHub Pages</a> </p>
+
         
         </section>
       <section class="section" id="summury">
-        <p class="section-head">summury</p>     
+        <p class="section-head">summury</p>  
+        <p>I have a strong communication skills due to my previous job as a b2b seller. My degree consists of bachelour in BSEU and 3 master courses at the same university. So,as you can see, i'm good at learning). Also i have a good English skills and strong in math.</p>   
       </section>
       <section class="section" id="skills">
-        <p class="section-head">skills</p>     
+        <p class="section-head">skills</p> 
+        <ul>
+          <li>Web development: JavaScript CSS HTML</li>
+          <li>Version control: Git GitHub</li>
+          <li>Framework: Node.js</li>
+          
+
+        </ul>    
       </section>
       <section class="section" id="code"> 
         <p class="section-head">code example</p>
+        <code>
+          
+          int main(void) {<br>
+              int n = get_int ("n:?\n") ;<br>
+          
+              if (n % 2 == 0) {<br>
+                  printf("even") ;<br>
+              }<Br>
+              else {<br>
+                  printf("odd") ;<br>
+              }<br>
+          }<br>
+          
+        </code>
       </section>
       <section class="section" id="courses"> 
         <p class="section-head">courses</p>
+        <ul>
+          <li>RS School: JS / Front-end. Stage 0 (RU)</li>
+          <li>CS50x: CS50’s Introduction to Computer Science</li>
+        </ul>
       </section>
       <section class="section" id="education">
         <p class="section-head">education</p>
+        <p>Belarusian state economic univercity: master of economic studies</p>
       </section>
       <section class="section" id="languages">
         <p class="section-head">languages</p>
+        <p> My level of English is somewhere between C1 Advanced and C2 Proficient according to the Common European Framework of Reference.</p>
       </section>
 
     </div>
   </main>
   <footer>
-    <div class="container">
-      ewfewfewfewfewfew
-
+    <div class="main-container">
+      <section class="section id-main"> 
+        <div class="footer-text">
+          <p>@2022 <a class="link-color-main" href="https://github.com/shish-ko">andreyshishko</a></p> 
+         </div>
+         <img class="footer-photo" src="./assets/rs_school_js.svg" alt="Andrew's photo">
+                
+      </section>
+    
+      
 
 
 
